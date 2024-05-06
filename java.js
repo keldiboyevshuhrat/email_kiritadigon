@@ -176,7 +176,7 @@ kirish_submit.addEventListener("click", () => {
     // for (let index = 0; index < name11.length; index++) {
 
         // console.log(name11[index].email);
-        if (kirish_email.value ==  name11.email  ) {
+        if (kirish_email.value ==  name11[name11.length.email]  ) {
             // kirish_yozuvlar2.style.color = 'green'
             console.log("togri");
 
@@ -186,7 +186,7 @@ kirish_submit.addEventListener("click", () => {
 
         }
 
-        if (kirish_parol.value ==  name11.parol  ){
+        if (kirish_parol.value ==  name11[name11.length.parol]  ){
             // kirish_yozuvlar3.style.color = 'green'
             console.log("togri");
 
