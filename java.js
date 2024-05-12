@@ -60,7 +60,7 @@ royhat_submit.addEventListener("click", () => {
     let eee = (royhat_yozuv_parol)
 
     if (eeeeeee.style.color == 'green' && eee.style.color == 'green') {
-        royhar_yozuv_1.textContent = "ro'yhatga olingiz"
+        royhar_yozuv_1.textContent = "ro'yhatga olindiz"
     } else {
         royhar_yozuv_1.textContent = 'xato'
     }
@@ -173,45 +173,113 @@ let kirish_yozuvlar1 = document.querySelector("#kirish_yozuvlar1");
 
 kirish_submit.addEventListener("click", () => {
 
-    // for (let index = 0; index < name11.length; index++) {
 
-        // console.log(name11[index].email);
-        if (kirish_email.value ==  name11[name11.length.email]  ) {
-            // kirish_yozuvlar2.style.color = 'green'
-            console.log("togri");
 
-        }else{
-            // kirish_email.value = ""
-            console.log("hato");
+    name11.forEach((nom) => {
+        if (nom.email == kirish_email.value) {
+            kirish_yozuvlar2.style.color = 'green'
+            if (nom.parol == kirish_parol.value) {
+                kirish_yozuvlar3.style.color = 'green'
 
-        }
 
-        if (kirish_parol.value ==  name11[name11.length.parol]  ){
-            // kirish_yozuvlar3.style.color = 'green'
-            console.log("togri");
-
-        }else{
-            // kirish_parol.value = ""  
-            console.log("hato");
+            }
         }
 
 
+    })
 
+    let yozuv_email = kirish_yozuvlar2
+    let yozuv_parol = kirish_yozuvlar3
 
-
-
-
-
-
-
+    if (yozuv_email.style.color == 'green' && yozuv_parol.style.color == 'green') {
+        kirish_yozuvlar1.textContent = "Ro'yhat dan o'tiz"
+        kirish_yozuvlar1.style.color = 'green'
+    }else{
+        kirish_yozuvlar1.textContent = "xato"
     }
 
 
 
+    // let filter1= name11.filter((nom)=>{
+    //     return nom.parol == kirish_parol.value
+    // })
 
 
 
-// }
+
+
+
+
+
+
+
+
+
+
+    // for (let index = 0; index < name11.length; index++) {
+
+
+
+    // // console.log(name11[index].email);
+    // if (kirish_email.value == name11[name11.length.email]) {
+    //     // kirish_yozuvlar2.style.color = 'green'
+    //     console.log("togri");
+
+    // } else {
+    //     // kirish_email.value = ""
+    //     console.log("hato");
+
+    // }
+
+    // if (kirish_parol.value == name11.parol) {
+    //     // kirish_yozuvlar3.style.color = 'green'
+    //     console.log("togri");
+
+    // } else {
+    //     // kirish_parol.value = ""  
+    //     console.log("hato");
+    // }
+
+    // let parol1 = name11.filter((b) => b.parol == kirish_parol.value)
+
+
+
+    // let email1 = name11.filter((b) => b.email == kirish_email.value)
+    // let dddd = (email1)
+    // // console.log(dddd);
+
+
+
+    // // parol1 == name11.parol
+    // if (parol1.values ) {
+    //     console.log(true);
+    //     // kirish_yozuvlar3.style.color = 'green'
+    // } else {
+    //     console.log(false);
+
+    // kirish_yozuvlar3.textContent = 'xato'
+    // }
+
+    // if (email1 == name11.parol) {
+    //     kirish_yozuvlar2.style.color = 'green'
+    // }
+    // else {
+    //     kirish_yozuvlar2.textContent = 'xato'
+    // }
+
+
+
+    // let abd = name11.filter((sh) => sh.parol == kirish_yozuvlar3.value  )
+    // console.log(abd);
+
+
+
+
+
+
+    // }
+
+}
 )
 
 
